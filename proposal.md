@@ -93,21 +93,21 @@ where the blocks are <img src="https://latex.codecogs.com/svg.latex?\;\left\{B_i
 
 <img src="https://latex.codecogs.com/svg.latex?\;" title="" />  
 
-where <img src="https://latex.codecogs.com/svg.latex?\;S_n=\left\{n\right\}\cup\left\{a_i-1:i>1,a_i\le n\right\}" title="" />  
+where <img src="https://latex.codecogs.com/svg.latex?\;S_n=\left\{n\right\}\cup\left\{a_i-1:i>1,a_i\le n\right\}"/>  
 
 
 <br>
 
 ### Simulation
-1. Online covariance estatimation에 대한 수렴성을 확인하기 위해, 추정에 사용되는 batch size를 바꾸면서 step에 따른 <img src="https://latex.codecogs.com/svg.latex?\;|| \hat \Sigma_n - \Sigma ||_2" title="" />  값의 감소 양상을 비교해볼 것이다. 
+1. Online covariance estatimation에 대한 수렴성을 확인하기 위해, 추정에 사용되는 batch size를 바꾸면서 step에 따른 <img src="https://latex.codecogs.com/svg.latex?\;||\hat\Sigma_n-\Sigma||_2"/>  값의 감소 양상을 비교해볼 것이다. 
 
 2. full overlapping version과 non-overlapping version의 MSE 차이를 비교하기 위해 각 step 에 따른 relative efficiency 변화도 확인해볼 것이다. 
 
-3. 시뮬레이션 결과로 online covariance estimator의 수렴성을 확인한다면 asymptotic normality 하에서 averaged coefficient <img src="https://latex.codecogs.com/svg.latex?\;\mu = 1^T x^*" title="" />에 대한 신뢰구간을 구할 수 있을 것이다.
+3. 시뮬레이션 결과로 online covariance estimator의 수렴성을 확인한다면 asymptotic normality 하에서 averaged coefficient <img src="https://latex.codecogs.com/svg.latex?\mu=1^Tx^*"/>에 대한 신뢰구간을 구할 수 있을 것이다.
 
 
 <p align="center">
-<img src="https://latex.codecogs.com/svg.latex?\;[1^T \bar x_n - z_{1-q/2}\sqrt{1^T \hat \Sigma_n 1 /n} , 1^T \bar x_n + z_{1-q/2}\sqrt{1^T \hat \Sigma_n 1 /n} ]" title="" />  
+<img src="https://latex.codecogs.com/svg.latex?\;[1^T \bar x_n - z_{1-q/2}\sqrt{1^T \hat \Sigma_n 1 /n} , 1^T \bar x_n + z_{1-q/2}\sqrt{1^T \hat \Sigma_n 1 /n} ]"/>  
 
 
 
