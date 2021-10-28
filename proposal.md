@@ -24,14 +24,14 @@
 먼저 SGD에 대한 설명이 필요한데, 이를 위해 기본적인 objective function optimization을 통한 model parameter estimation을 수식으로 나타내면 다음과 같다.
 
 <p align="center">
-<img src="https://latex.codecogs.com/svg.latex?\;x^*=\underset{x\in\mathbb{R}^d}{argmin}F(x)" title="" />  
+<img src="https://latex.codecogs.com/svg.latex?x^*=\underset{x\in\mathbb{R}^d}{argmin}F(x)"/>  
 
 
 해당 문제를 online learning setting에서 풀기 위해 기본적인 deterministic optimization 방법들을 사용하는 경우, 계산 과정에서 계속 모든 data를 저장해야하기 때문에 memory cost와 computational efficiency 측면에서 좋지 않다고 할 수 있다. 이를 위해 도입된 방법 중 하나가 Stochastic Gradient Descent (SGD)이다. 해당 방법의 과정은 다음과 같다.
 
 
 <p align="center">
-<img src="https://latex.codecogs.com/svg.latex?\;x_i=x_{i-1}-\eta_i\Delta f(x_{i-1},\xi_i),\ i\ge 1" title="" />  
+<img src="https://latex.codecogs.com/svg.latex?x_i=x_{i-1}-\eta_i\Delta f(x_{i-1},\xi_i),\ i\ge 1"/>  
 
 
 
